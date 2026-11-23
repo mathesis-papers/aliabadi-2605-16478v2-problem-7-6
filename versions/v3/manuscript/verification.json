@@ -1,0 +1,349 @@
+{
+  "coverage": "Exhaustive permutation checks in S3, D8 and Q8, all ordered two-letter supports and multiplicities, all abelian subgroups at ambient group length, and exhaustive two-letter-map checks for the specified dihedral, dicyclic and A4 examples.",
+  "general_results": "The note gives written proofs for arbitrary finite groups and the abelian-subgroup criterion.",
+  "groups": [
+    {
+      "commutator_subgroup": [
+        "123",
+        "231",
+        "312"
+      ],
+      "distinct_quotient_multisets": 146,
+      "group": "S3",
+      "labels": [
+        "123",
+        "132",
+        "213",
+        "231",
+        "312",
+        "321"
+      ],
+      "order": 6,
+      "ordered_two_letter_cases": 210,
+      "permutation_support_histogram": {
+        "0": 1,
+        "2": 15,
+        "3": 40,
+        "4": 135,
+        "5": 264,
+        "6": 265
+      },
+      "permutations_enumerated": 720,
+      "sparse_support_cases": 35,
+      "status": "pass",
+      "subgroup_criterion": {
+        "abelian_subgroups": 5,
+        "length": 6,
+        "status": "pass",
+        "supported_multisets_checked": 50
+      },
+      "witness": {
+        "abelianization_product_identity": true,
+        "identity_multiplicity": 5,
+        "nonidentity_element": "231",
+        "nonidentity_multiplicity": 1,
+        "realizing_permutations": 0
+      }
+    },
+    {
+      "commutator_subgroup": [
+        "1",
+        "r^2"
+      ],
+      "distinct_quotient_multisets": 1423,
+      "group": "D8",
+      "labels": [
+        "1",
+        "r",
+        "r^2",
+        "r^3",
+        "s",
+        "rs",
+        "r^2s",
+        "r^3s"
+      ],
+      "order": 8,
+      "ordered_two_letter_cases": 504,
+      "permutation_support_histogram": {
+        "0": 1,
+        "2": 28,
+        "3": 112,
+        "4": 630,
+        "5": 2464,
+        "6": 7420,
+        "7": 14832,
+        "8": 14833
+      },
+      "permutations_enumerated": 40320,
+      "sparse_support_cases": 63,
+      "status": "pass",
+      "subgroup_criterion": {
+        "abelian_subgroups": 9,
+        "length": 8,
+        "status": "pass",
+        "supported_multisets_checked": 541
+      },
+      "witness": {
+        "abelianization_product_identity": true,
+        "identity_multiplicity": 7,
+        "nonidentity_element": "r^2",
+        "nonidentity_multiplicity": 1,
+        "realizing_permutations": 0
+      }
+    },
+    {
+      "commutator_subgroup": [
+        "1",
+        "-1"
+      ],
+      "distinct_quotient_multisets": 1415,
+      "group": "Q8",
+      "labels": [
+        "1",
+        "i",
+        "j",
+        "k",
+        "-1",
+        "-i",
+        "-j",
+        "-k"
+      ],
+      "order": 8,
+      "ordered_two_letter_cases": 504,
+      "permutation_support_histogram": {
+        "0": 1,
+        "2": 28,
+        "3": 112,
+        "4": 630,
+        "5": 2464,
+        "6": 7420,
+        "7": 14832,
+        "8": 14833
+      },
+      "permutations_enumerated": 40320,
+      "sparse_support_cases": 63,
+      "status": "pass",
+      "subgroup_criterion": {
+        "abelian_subgroups": 5,
+        "length": 8,
+        "status": "pass",
+        "supported_multisets_checked": 505
+      },
+      "witness": {
+        "abelianization_product_identity": true,
+        "identity_multiplicity": 7,
+        "nonidentity_element": "-1",
+        "nonidentity_multiplicity": 1,
+        "realizing_permutations": 0
+      }
+    }
+  ],
+  "product_one_families": [
+    {
+      "first_label_index": 3,
+      "group": "D6",
+      "maps_enumerated": 64,
+      "order": 6,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "3": 2,
+        "6": 1
+      },
+      "relative_element_order": 3,
+      "second_label_index": 5,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        4
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 4,
+      "group": "D8",
+      "maps_enumerated": 256,
+      "order": 8,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "4": 2,
+        "8": 1
+      },
+      "relative_element_order": 4,
+      "second_label_index": 7,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        6
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 5,
+      "group": "D10",
+      "maps_enumerated": 1024,
+      "order": 10,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "10": 1,
+        "5": 2
+      },
+      "relative_element_order": 5,
+      "second_label_index": 9,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        8
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 6,
+      "group": "D12",
+      "maps_enumerated": 4096,
+      "order": 12,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "12": 1,
+        "6": 2
+      },
+      "relative_element_order": 6,
+      "second_label_index": 11,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        10
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 7,
+      "group": "D14",
+      "maps_enumerated": 16384,
+      "order": 14,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "14": 1,
+        "7": 2
+      },
+      "relative_element_order": 7,
+      "second_label_index": 13,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        12
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 8,
+      "group": "D16",
+      "maps_enumerated": 65536,
+      "order": 16,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "16": 1,
+        "8": 2
+      },
+      "relative_element_order": 8,
+      "second_label_index": 15,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        14
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 4,
+      "group": "Dic_2",
+      "maps_enumerated": 256,
+      "order": 8,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "4": 2,
+        "8": 1
+      },
+      "relative_element_order": 4,
+      "second_label_index": 7,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        6
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 6,
+      "group": "Dic_3",
+      "maps_enumerated": 4096,
+      "order": 12,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "12": 1,
+        "6": 2
+      },
+      "relative_element_order": 6,
+      "second_label_index": 11,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        10
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 8,
+      "group": "Dic_4",
+      "maps_enumerated": 65536,
+      "order": 16,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "16": 1,
+        "8": 2
+      },
+      "relative_element_order": 8,
+      "second_label_index": 15,
+      "status": "pass",
+      "witness_multiplicities": [
+        2,
+        14
+      ],
+      "witness_realizing_permutations": 0
+    },
+    {
+      "first_label_index": 4,
+      "group": "A4",
+      "maps_enumerated": 4096,
+      "order": 12,
+      "product_one_ordering": "First all copies of the first label, then all copies of the second.",
+      "realizing_permutations_by_second_multiplicity": {
+        "0": 1,
+        "10": 6,
+        "12": 1,
+        "2": 6,
+        "4": 15,
+        "6": 20,
+        "8": 15
+      },
+      "relative_element_order": 2,
+      "second_label_index": 9,
+      "status": "pass",
+      "witness_multiplicities": [
+        3,
+        9
+      ],
+      "witness_realizing_permutations": 0
+    }
+  ],
+  "schema_version": 1,
+  "status": "pass"
+}

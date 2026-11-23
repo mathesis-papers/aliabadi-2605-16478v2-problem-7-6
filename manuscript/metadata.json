@@ -1,0 +1,68 @@
+{
+  "id": "aliabadi-2605-16478v2-problem-7-6",
+  "revision": 3,
+  "problem_ids": ["aliabadi-2605-16478v2-problem-7-6"],
+  "topic": "Right-quotient multisets in finite groups",
+  "title": "Aliabadi's Problems 7.4 and 7.6: Two-letter and subgroup extensions of Korea Superintelligence Labs (2026) (arXiv:2605.16478v2, Section 7, page 17)",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "license": "cc-by-4.0",
+  "abstract": "We extend Korea Superintelligence Labs' (2026) affirmative answer to Aliabadi's Problem 7.6 (A nonabelian twist on differences of bijections, arXiv:2605.16478v2, Section 7, page 17) by giving exact two-letter and abelian-subgroup criteria, the latter answering Problem 7.4. For a finite group G of order n and distinct u,v, a multiset with k copies of v and n-k copies of u is quotient-realizable exactly when d=ord(u^-1 v) divides k; the number of realizing permutations is binomial(n/d,k/d). We give product-one obstructions in every nonabelian dihedral group, every dicyclic group of order at least eight, and A4. Hall's theorem (1952) supplies abelian sufficiency, the two-diagonal permanent formula of De Poi et al. (2018) supplies the enumeration antecedent, and the Erdős–Ginzburg–Ziv theorem (1961) supplies the block decomposition.",
+  "summary": "An exact two-letter criterion and exact abelian-subgroup criterion, with full written proofs and product-one obstructions for dihedral, dicyclic and alternating groups. The general singleton obstruction and its abelian-group consequence are reproofs of Korea Superintelligence Labs (2026).",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/1154841a3345ca579e0d56fc4ceebee38814557c/D5/S3/FiniteGroups/AliabadiQuotientObstruction.lean",
+  "posing_source": {
+    "author": "Mohsen Aliabadi",
+    "title": "A nonabelian twist on differences of bijections",
+    "arxiv_url": "https://arxiv.org/abs/2605.16478v2",
+    "arxiv_date": "2026-06-26",
+    "locator": "Section 7, Problems 7.4 and 7.6, page 17",
+    "journal_doi": "10.61091/um128-18",
+    "journal_locator": "Utilitas Mathematica 128 (2026), 375–397; Section 7, pages 395–396"
+  },
+  "coverage": [
+    {"locator": "Problem 7.1", "status": "prior proof cited", "scope": "Korea Superintelligence Labs (2026), Theorems 4.1–4.2: ten translation representatives and 146 multisets; not reproved here"},
+    {"locator": "Problem 7.2", "status": "Answered: yes; Reproved; prior proof Korea Superintelligence Labs, 2026", "scope": "Both singleton and product-one witnesses in D8"},
+    {"locator": "Problem 7.3", "status": "Answered: yes; Reproved; prior proof Korea Superintelligence Labs, 2026", "scope": "Both singleton and product-one witnesses in Q8"},
+    {"locator": "Problem 7.4", "status": "Answered: possible exactly under the stated intersection condition", "scope": "For every abelian H≤G and m≥1, an admissible nonpartitionable multiset of length m|H| exists iff H∩[G,G] is nontrivial; a consequence of Erdős–Ginzburg–Ziv (1961) and the kernel condition"},
+    {"locator": "Problem 7.5", "status": "Answered: exactly the finite abelian groups; Reproved; prior proof Korea Superintelligence Labs, 2026", "scope": "The nonabelian obstruction together with Hall (1952)"},
+    {"locator": "Problem 7.6", "status": "Answered: yes; Reproved; prior proof Korea Superintelligence Labs, 2026", "scope": "Every finite nonabelian G, using any nonidentity element of [G,G] once and |G|-1 identities"},
+    {"locator": "Problem 7.7", "status": "Answered for two-letter support; larger supports not covered", "scope": "Exact divisibility criterion and permutation count in every finite group; identity-supported case is a consequence of Aliabadi's Corollary 4.3 and De Poi et al. (2018), Remark 2.5"},
+    {"locator": "Korea Superintelligence Labs (2026), Section 8, final paragraph", "status": "Answered: yes", "scope": "Product-one nonrealizable multisets in D10, D12, Dic_3 and A4; the same written constructions cover all nonabelian dihedral and dicyclic groups and all their finite overgroups"},
+    {"locator": "Aliabadi, Theorem 6.2", "status": "Extended existence conclusion", "scope": "Product-one obstructions in S3×K for every finite K, with multiplicities 2 and 6|K|-2; the source's different 2|K|/4|K| witness retains its original restriction"}
+  ],
+  "verification_scope": {
+    "lean_declaration": "D5.S3.FiniteGroups.AliabadiQuotientObstruction.exists_obstructed_multiset",
+    "lean_statement": "Existence of a cardinality-|G| abelianization-admissible right-quotient obstruction in every finite noncommutative group; literal multiset multiplicities and two bijective enumerations",
+    "written_proofs": ["Universal singleton obstruction", "Abelian-group characterization using Hall's theorem", "Two-letter criterion and exact permutation count", "Product-one dihedral and dicyclic families and A4 example", "Abelian-subgroup intersection criterion using Erdős–Ginzburg–Ziv"],
+    "finite_checks": "81,360 permutations of S3,D8,Q8; 1,218 ordered two-letter/multiplicity cases including exact counts; 1,096 abelian-subgroup-supported multisets; 161,344 two-letter maps in the specified dihedral, dicyclic and A4 examples",
+    "additional_criteria": "The two-letter, enumeration, subgroup and product-one-family statements have written proofs; they are not statements of the linked Lean declaration."
+  },
+  "literature_comparison": {
+    "as_of": "2026-11-07",
+    "framing": "Self-contained deductions and extensions of the cited results; no novelty or priority claim for the two-letter criterion or enumeration.",
+    "aliabadi_two_valued": {
+      "title": "Quotient-Realizable Multisets in Finite Groups: Two-Valued Criteria and Enumeration",
+      "source_url": "https://mohsenmath88.wixsite.com/mohsenaliabadi/publications",
+      "locator": "Item 31, listed as Utilitas Mathematica (2026)",
+      "scope": "Full text and individual publication date unavailable; possible complete overlap with the two-letter criterion and exact enumeration; theorem-level relationship undetermined."
+    },
+    "donovan_johnson_wanless": {
+      "doi": "10.1002/jcd.21418",
+      "first_online": "2014-11-19",
+      "print": "2016-03",
+      "abstract_url": "https://users.monash.edu.au/~iwanless/abstracts/perdetLS.html",
+      "scope": "The abstract describes two-symbol permanent coefficients through symbol-cycle lengths. Full article unavailable; exact specialization to the present count undetermined. No numbered theorem from that article is a premise of the proofs."
+    }
+  },
+  "references": [
+    {"authors": "Mohsen Aliabadi", "year": 2026, "url": "https://arxiv.org/abs/2605.16478v2", "locator": "Corollary 4.3 and Section 7"},
+    {"authors": "Marshall Hall Jr.", "year": 1952, "doi": "10.1090/S0002-9939-1952-0050579-7"},
+    {"authors": "Korea Superintelligence Labs", "year": 2026, "url": "https://ideosphere.ai/papers/quotient-realizable-v1.pdf", "locator": "Theorems 3.2, 4.1–4.2, 5.2, 5.4, 6.2, 6.4; Corollary 3.3; Section 8"},
+    {"authors": "Pietro De Poi; Emilia Mezzetti; Mateusz Michałek; Rosa Maria Miró-Roig; Eran Nevo", "year": 2018, "url": "https://arxiv.org/abs/1808.08387v1", "locator": "Remark 2.5, pages 4–5"},
+    {"authors": "Paul Erdős; Abraham Ginzburg; Abraham Ziv", "year": 1961, "url": "https://users.renyi.hu/~p_erdos/1961-25.pdf", "locator": "Final paragraph"},
+    {"authors": "Mohsen Aliabadi", "year": 2026, "title": "Quotient-Realizable Multisets in Finite Groups: Two-Valued Criteria and Enumeration", "url": "https://mohsenmath88.wixsite.com/mohsenaliabadi/publications", "locator": "Item 31; full text and individual publication date unavailable"},
+    {"authors": "Diane Donovan; Kenneth Johnson; Ian M. Wanless", "year": 2016, "first_online": "2014-11-19", "doi": "10.1002/jcd.21418", "locator": "Author-hosted abstract; exact theorem-level specialization undetermined"}
+  ]
+}

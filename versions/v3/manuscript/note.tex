@@ -1,0 +1,397 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ab}{\mathrm{ab}}
+\newcommand{\mult}{\mathrm{mult}}
+\title{Aliabadi's Problems 7.4 and 7.6:\\
+Two-letter and subgroup extensions of\\
+Korea Superintelligence Labs (2026)\\
+\large arXiv:2605.16478v2, Section 7, page 17}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\
+\small ChronoAI Pte Ltd, Singapore}
+\date{November 7, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We extend Korea Superintelligence Labs' (2026) affirmative answer to
+Aliabadi's Problem 7.6 (\emph{A nonabelian twist on differences of
+bijections}, arXiv:2605.16478v2, Section 7, page 17) by giving exact
+two-letter and abelian-subgroup criteria, the latter answering Problem 7.4.
+A multiset with $k$ copies of $v$ and $|G|-k$ copies of $u\ne v$ is
+quotient-realizable exactly when $\operatorname{ord}(u^{-1}v)$ divides $k$.
+This supplies short proofs of the previously established $D_8$ and $Q_8$
+examples and product-one obstructions in every nonabelian dihedral group,
+every dicyclic group of order at least eight, and $A_4$.
+Hall's theorem (1952) gives the complementary abelian case;
+the Erd\H{o}s--Ginzburg--Ziv theorem (1961) supplies the block decomposition.
+\end{abstract}
+
+\section{The question and its answer}
+Aliabadi's Problem 7.6 \cite[Section 7, page 17]{Aliabadi} asks:
+\begin{quote}
+Does every finite nonabelian group admit a multiset $A$ of cardinality $|G|$
+satisfying the abelianization obstruction but not quotient-realizable?
+\end{quote}
+The answer is yes, with a witness having exactly one nonidentity entry.
+The same problem appears on page 396 of the journal version \cite{Aliabadi}.
+Korea Superintelligence Labs \cite[Theorem 3.2]{KSL} already gave this
+answer, together with the abelian-group characterization and the $D_8,Q_8$
+examples. We retain its short argument to connect the extensions below
+to the precise question.
+
+Write $n=|G|$, and let $\pi:G\to G^{\ab}=G/[G,G]$ be the canonical map.
+All multiset equalities and products count multiplicity. Following
+\cite[Definition 2.1]{Aliabadi}, a multiset $A$ of size $n$ is
+\emph{quotient-realizable} if there are bijections
+$b,c:\{1,\ldots,n\}\to G$ with
+\begin{equation}\label{eq:quotients}
+ A=\{b(i)c(i)^{-1}:1\leq i\leq n\}_{\mult}.
+\end{equation}
+Its \emph{abelianization condition} is
+\begin{equation}\label{eq:abelian}
+ \prod_{a\in A}\pi(a)=1\quad\hbox{in }G^{\ab}.
+\end{equation}
+The product in \eqref{eq:abelian} is independent of order. If
+\eqref{eq:quotients} holds, the products of $\pi(b(i))$ and $\pi(c(i))$
+are equal, proving \eqref{eq:abelian}; this is
+\cite[Proposition 2.3]{Aliabadi}. In an abelian group the converse is
+Hall's theorem \cite{Hall}; its multiplicative formulation is also stated
+in \cite[Section 1]{Aliabadi}.
+
+\begin{theorem}\label{thm:main}
+Let $G$ be a finite nonabelian group of order $n$. For every
+$a\in[G,G]\setminus\{1\}$ the multiset
+\[
+ A_a=\{a,\underbrace{1,\ldots,1}_{n-1\text{ copies}}\}_{\mult}
+\]
+satisfies \eqref{eq:abelian} and is not quotient-realizable.
+\end{theorem}
+\begin{proof}
+The subgroup $[G,G]$ is nontrivial: otherwise every commutator
+$xyx^{-1}y^{-1}$ is $1$, so every pair of elements commutes.
+Thus such an $a$ exists. Since $\pi(a)=1$, all $n$ entries of $A_a$
+map to $1$ and \eqref{eq:abelian} holds.
+
+Suppose that $b,c$ realize $A_a$. Exactly one index $i_0$ has
+$b(i_0)c(i_0)^{-1}\ne1$; at every other index $b(i)=c(i)$.
+The common values at those $n-1$ indices form a subset $S\subset G$
+of size $n-1$. Bijectivity forces both $b(i_0)$ and $c(i_0)$ to equal
+the unique element of $G\setminus S$. This contradicts
+$b(i_0)c(i_0)^{-1}=a\ne1$.
+\end{proof}
+
+\begin{corollary}\label{cor:abelian}
+The finite groups for which \eqref{eq:abelian} is sufficient for every
+multiset of size $|G|$ are exactly the abelian groups
+(Aliabadi's Problem 7.5).
+\end{corollary}
+\begin{proof}
+For abelian groups this is Hall's theorem \cite{Hall}.
+Every nonabelian group is excluded by Theorem~\ref{thm:main}.
+\end{proof}
+
+\paragraph{Small-group witnesses (Problems 7.2 and 7.3).}
+In $D_8=\langle r,s:r^4=s^2=1,\ srs=r^{-1}\rangle$, take
+$a=r^2=[r,s]$. In $Q_8=\{\pm1,\pm i,\pm j,\pm k\}$, take
+$a=-1=[i,j]$. Each witness consists of that element once and seven
+identities. For $S_3$, take a $3$-cycle once and five identities.
+Here a $3$-cycle belongs to $[S_3,S_3]$, for example by computing
+$[(12),(23)]=((12)(23))^2$.
+Every ordering of $A_a$ has product $a\ne1$ in $G$. Thus these
+witnesses answer the literal questions, which allow repeated identities;
+they do not assert the stronger product-one-ordering property of
+Aliabadi's different example \cite[Propositions 5.2 and 5.4]{Aliabadi}.
+
+\section{An exact test for arbitrary two-letter support}
+The identity-supported criterion below follows already from
+Aliabadi's Corollary 4.3 by restricting each cyclic-subgroup block to
+the exponents zero and one. Its enumeration formula is the two-diagonal
+permanent formula in \cite[Remark 2.5]{DePoi}. We give a direct proof
+that also makes its arbitrary-group interpretation explicit.
+The two-letter criteria and counts below are presented as self-contained
+deductions, without a novelty or priority claim.
+
+\paragraph{Scope of comparison.}
+Aliabadi lists \emph{Quotient-Realizable Multisets in Finite Groups:
+Two-Valued Criteria and Enumeration} as a 2026 \emph{Utilitas Mathematica}
+item \cite{AliabadiTwo}; its full text and individual publication date
+are unavailable. Its title indicates possible complete overlap with the
+two-letter criterion and enumeration below; the theorem-level relationship
+is undetermined. Donovan, Johnson and Wanless \cite{DJW}, published online
+in 2014 and in print in 2016, describe two-symbol permanent coefficients
+in terms of symbol-cycle lengths in their abstract. The full article is
+unavailable, so the exact specialization to the count below is likewise
+undetermined. These two sources are credited as potentially overlapping
+work; neither is used as a premise of a proof here.
+\begin{proposition}\label{prop:sparse}
+Let $a\ne1$ have order $d$ in a finite group $G$ of order $n$.
+For $0\leq k\leq n$, let $A_{a,k}$ contain $k$ copies of $a$ and
+$n-k$ copies of $1$. Then
+\[
+ A_{a,k}\text{ is quotient-realizable}\quad\Longleftrightarrow\quad d\mid k.
+\]
+In contrast, its abelianization condition is
+$\operatorname{ord}(\pi(a))\mid k$.
+If $d\mid k$, exactly $\binom{n/d}{k/d}$ permutations $\phi$ of $G$
+have these quotient labels; otherwise there are none.
+\end{proposition}
+\begin{proof}
+By \cite[Lemma 2.2]{Aliabadi}, a realization is equivalent to a
+permutation $\phi$ of $G$ whose labels are $\phi(x)x^{-1}$:
+given $b,c$, put $\phi=b\circ c^{-1}$, and conversely enumerate
+$G$ by $c$ and set $b=\phi\circ c$.
+If every label lies in $\{1,a\}$, then $\phi(x)$ is either $x$ or $ax$.
+Let $M$ be the set of moved points. If $x\in M$ but $ax\notin M$,
+then $\phi(x)=ax=\phi(ax)$, contradicting injectivity.
+Consequently $M$ is a union of orbits of left multiplication by $a$.
+Each orbit has exactly $d$ elements, since $a^jx=x$ exactly when
+$a^j=1$. Hence $d\mid |M|=k$.
+
+Conversely, left multiplication by $a$ partitions $G$ into $n/d$ orbits.
+If $d\mid k$, choose $k/d$ of them. Define $\phi(x)=ax$ on their
+union and $\phi(x)=x$ elsewhere. This is a permutation with the
+required labels, including when $k=0$. Finally, the product of the
+projected labels is $\pi(a)^k$, proving the abelianization assertion.
+Each such permutation is determined by its choice of $k/d$ of the
+$n/d$ orbits, proving the count.
+\end{proof}
+
+\begin{corollary}\label{cor:twoletter}
+Let $u\ne v$ belong to a finite group $G$ of order $n$.
+The multiset with $n-k$ copies of $u$ and $k$ copies of $v$, where
+$0\leq k\leq n$, is quotient-realizable if and only if
+\[
+ \operatorname{ord}(u^{-1}v)\mid k.
+\]
+Its abelianization condition is exactly
+$\operatorname{ord}(\pi(u^{-1}v))\mid k$.
+Writing $d=\operatorname{ord}(u^{-1}v)$, the number of realizing
+permutations is $\binom{n/d}{k/d}$ when $d\mid k$, and zero otherwise.
+\end{corollary}
+\begin{proof}
+Left multiplication of all labels by $u^{-1}$ preserves realizability:
+replace a realizing permutation $\phi$ by $x\mapsto u^{-1}\phi(x)$.
+This is a bijection on the set of permutations of $G$.
+The resulting labels are $1$ and $u^{-1}v$, so
+Proposition~\ref{prop:sparse} applies. Conversely multiply the permutation
+by $u$. In the abelianization the product of the original labels is
+$\pi(u)^n\pi(u^{-1}v)^k=\pi(u^{-1}v)^k$, since $u^n=1$.
+This proves the second assertion as well.
+\end{proof}
+Two-sided translation invariance was recorded in
+\cite[Proposition 2.4]{KSL}. The criterion gives written proofs of
+Aliabadi's Lemma 6.1 and the two-letter tests
+\cite[Theorems 5.4 and 6.4]{KSL}, rather than a finite search for those cases.
+
+\begin{corollary}\label{cor:strong}
+Each of the following multisets has a product-one ordering but is not
+quotient-realizable in its indicated group:
+\begin{enumerate}
+\item In $D_{2m}=\langle r,s:r^m=s^2=1,\ srs^{-1}=r^{-1}\rangle$,
+      $m\geq3$, take two copies of $s$ and $2m-2$ copies of $sr$.
+\item In $\mathrm{Dic}_m=\langle r,s:r^{2m}=1,\ s^2=r^m,
+      \ srs^{-1}=r^{-1}\rangle$, $m\geq2$, take two copies of $s$
+      and $4m-2$ copies of $sr$.
+\item In $A_4$, take three copies of $u=(123)$ and nine copies of $v=(142)$.
+\end{enumerate}
+In particular all satisfy the abelianization condition.
+\end{corollary}
+\begin{proof}
+In the dihedral case, $s$ and $sr$ are involutions, so putting equal
+letters into adjacent pairs gives product $1$. But
+$s^{-1}(sr)=r$ has order $m$, which does not divide $2m-2$ for $m\geq3$.
+In the dicyclic case both letters have square $r^m$ and order four.
+Writing the two $s$'s first, the product is
+$s^2(sr)^{4m-2}=r^m(r^m)^{2m-1}=1$.
+Here $s^{-1}(sr)=r$ has order $2m$, not dividing $4m-2$ for $m\geq2$.
+Finally, both $u,v$ in $A_4$ have order three, so $u^3v^9=1$,
+whereas $u^{-1}v=(14)(23)$ has order two, not dividing nine.
+Corollary~\ref{cor:twoletter} excludes realizability in each case.
+Applying $\pi$ to any product-one ordering gives the abelianization condition.
+\end{proof}
+The cases $D_8$ and $Q_8=\mathrm{Dic}_2$ have prior proofs in
+\cite[Theorems 5.2 and 6.2]{KSL}. The same paper, Section 8, explicitly
+leaves the analogous existence questions for $D_{10},D_{12},\mathrm{Dic}_3$
+and $A_4$ unanswered; Corollary~\ref{cor:strong} answers all four positively.
+Generalized quaternion groups are the subfamily $\mathrm{Dic}_m$ with
+$m$ a power of two. Neither posing source asserts that product-one
+orderability is sufficient in every group; these are answers to existence
+questions, not refutations of an asserted universal statement.
+
+\begin{corollary}\label{cor:overgroup}
+The product-one constructions of Corollary~\ref{cor:strong} persist
+in every finite group containing the indicated group: keep the number
+of copies of the first letter, and fill the remaining positions with
+the second letter. In particular, in $S_3\times K$ for every finite $K$,
+two copies of $((12),1)$ and $6|K|-2$ copies of $((23),1)$ form a
+product-one nonrealizable multiset.
+\end{corollary}
+\begin{proof}
+Let $H\leq G$ have orders $h,n$. Each displayed witness in $H$ has
+the ordered product $u^c v^{h-c}=1$ with
+$d=\operatorname{ord}(u^{-1}v)\nmid c$.
+Since $h\mid n$, $v^h=1$ and $d\mid h$, we have
+$u^c v^{n-c}=u^c v^{h-c}(v^h)^{n/h-1}=1$ and $d\nmid n-c$.
+Corollary~\ref{cor:twoletter} proves nonrealizability in $G$.
+The $S_3$ instance is $D_6$ in Corollary~\ref{cor:strong}.
+\end{proof}
+This extends the existence conclusion of \cite[Theorem 6.2]{Aliabadi}
+to every finite $K$; the source's particular multiplicities
+$2|K|$ and $4|K|$ retain their stated restriction $3\nmid|K|$.
+
+\section{The subgroup question}
+The following criterion answers Problem 7.4 for each specified abelian
+subgroup, and for every positive length divisible by its order.
+The zero-sum terminology of that problem is written multiplicatively here.
+Its partition step is a direct consequence of the finite-abelian-group
+form of the Erd\H{o}s--Ginzburg--Ziv theorem \cite[final paragraph]{EGZ}.
+
+\begin{proposition}\label{prop:subgroup}
+Let $G$ be finite, let $H\leq G$ be abelian, and let $m\geq1$.
+There exists a multiset $A$ supported in $H$, of size $m|H|$, such that
+$\prod_{a\in A}\pi(a)=1$ but $A$ cannot be partitioned into $m$
+blocks of size $|H|$, each of product $1$, if and only if
+\[
+ H\cap[G,G]\ne\{1\}.
+\]
+\end{proposition}
+\begin{proof}
+If $a\in H\cap[G,G]$ is nonidentity, use $a$ once and $1$ another
+$m|H|-1$ times. The projected product is $1$. The unique block containing
+$a$ has product $a\ne1$, so the required partition is impossible.
+
+Conversely, suppose $H\cap[G,G]=\{1\}$ and let $A$ have the stated
+size and projected product. Since $H$ is abelian its product
+$p=\prod_{a\in A}a$ is defined in $H$. The equation $\pi(p)=1$
+places $p$ in $H\cap[G,G]$, hence $p=1$.
+Put $h=|H|$. The finite-abelian-group form of the
+Erd\H{o}s--Ginzburg--Ziv theorem says that any $2h-1$ entries in $H$
+contain $h$ entries with product $1$.
+While at least $2h$ entries remain, select such a block and remove it.
+The remaining product stays $1$. After $m-1$ removals the final $h$
+entries also have product $1$. This includes $m=1$, when no removal
+is required, and proves the desired partition.
+\end{proof}
+For the cardinality $|G|$ used in the quotient problem, set $m=[G:H]$.
+In particular, every finite nonabelian group has an abelian subgroup
+supporting such an obstruction: choose $H=\langle a\rangle$ with
+$a\in[G,G]\setminus\{1\}$.
+
+\section{Coverage and verification}
+The locators below refer to Section 7 of arXiv:2605.16478v2; the journal
+version has the same numbering on pages 395--396.
+\begin{center}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.14\linewidth}p{0.79\linewidth}@{}}
+\toprule
+Source item & Coverage in this note \\
+\midrule
+Problem 7.1 & Prior proof cited: \cite[Theorems 4.1--4.2]{KSL}
+classifies all 146 multisets in $S_3$ by ten two-sided-translation
+representatives. The full classification is not reproved here. \\
+Problem 7.2 & Answered: yes. Reproved; prior proof Korea Superintelligence
+Labs (2026), Theorem 5.2. Corollary~\ref{cor:strong} includes $D_8$. \\
+Problem 7.3 & Answered: yes. Reproved; prior proof Korea Superintelligence
+Labs (2026), Theorem 6.2. Corollary~\ref{cor:strong} includes $Q_8$. \\
+Problem 7.4 & Answered: possible exactly when $H\cap[G,G]\ne\{1\}$,
+for each abelian $H$ and every length $m|H|$, $m\geq1$
+(Proposition~\ref{prop:subgroup}). \\
+Problem 7.5 & Answered: exactly the abelian groups. Reproved; prior proof
+Korea Superintelligence Labs (2026), Corollary 3.3, using Hall (1952). \\
+Problem 7.6 & Answered: yes. Reproved; prior proof Korea Superintelligence
+Labs (2026), Theorem 3.2. Theorem~\ref{thm:main} allows any
+nonidentity element of $[G,G]$. \\
+Problem 7.7 & Answered for arbitrary two-letter support in every finite
+group (Corollary~\ref{cor:twoletter}); supports of size three or more
+are not classified here. The identity-supported criterion already follows
+from \cite[Corollary 4.3]{Aliabadi}; the count has the antecedent
+\cite[Remark 2.5]{DePoi}, with possible further overlap
+\cite{AliabadiTwo,DJW}. \\
+\cite[Section 8]{KSL} & Answered: yes for the product-one obstruction
+questions in $D_{10},D_{12},\mathrm{Dic}_3,A_4$
+(Corollary~\ref{cor:strong}). \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip\noindent\textbf{Mathematical scope of the accompanying evidence.}
+\begin{quote}\small
+\href{https://github.com/the-omega-institute/trureturing/blob/1154841a3345ca579e0d56fc4ceebee38814557c/D5/S3/FiniteGroups/AliabadiQuotientObstruction.lean}{\texttt{AliabadiQuotientObstruction.lean}}
+\\\texttt{exists\_obstructed\_multiset}
+\end{quote}
+This declaration states the existence conclusion of Theorem~\ref{thm:main} for arbitrary
+finite noncommutative groups, with literal multiset multiplicities,
+canonical abelianization and two bijections. Its proof uses the same
+witness and the fact that a permutation cannot move exactly one point.
+Corollaries~\ref{cor:abelian}, \ref{cor:twoletter}, \ref{cor:strong}
+and~\ref{cor:overgroup},
+the examples and Propositions~\ref{prop:sparse} and~\ref{prop:subgroup}
+have the written proofs given above; the declaration does not state
+these additional criteria or the product-one families.
+The supplementary \texttt{verify.py} exhausts all permutations of
+$S_3,D_8,Q_8$, checks their single-entry witnesses and tests the
+divisibility criterion for every ordered pair of distinct labels and every
+$0\leq k\leq|G|$ in those groups. It also enumerates all maps whose
+labels lie in the indicated pair for $D_{2m}$, $3\leq m\leq8$,
+$\mathrm{Dic}_m$, $2\leq m\leq4$, and $A_4$.
+These finite checks illustrate the
+general statements; their proofs do not depend on enumeration.
+It also checks all multisets of length $|G|$ supported in every abelian
+subgroup of these three groups against the block-partition criterion.
+
+\begin{thebibliography}{9}
+\bibitem{Aliabadi}
+M. Aliabadi, \emph{A nonabelian twist on differences of bijections},
+Utilitas Mathematica \textbf{128} (2026), 375--397.
+\href{https://doi.org/10.61091/um128-18}{doi:10.61091/um128-18}.
+Posing version: \href{https://arxiv.org/abs/2605.16478v2}{arXiv:2605.16478v2},
+26 June 2026, especially Definition 2.1, Lemma 2.2,
+Proposition 2.3, Corollary 4.2 and Section 7.
+\bibitem{Hall}
+M. Hall, Jr., \emph{A combinatorial problem on abelian groups},
+Proceedings of the American Mathematical Society \textbf{3} (1952), 584--587.
+\href{https://doi.org/10.1090/S0002-9939-1952-0050579-7}{doi:10.1090/S0002-9939-1952-0050579-7}.
+\bibitem{KSL}
+Korea Superintelligence Labs,
+\emph{Quotient-realizable Multisets in a Finite Group:
+The Classification in $S_3$, Counterexamples in $D_8$ and $Q_8$,
+and the Abelianization Obstruction in Every Finite Nonabelian Group},
+version 1 (2026).
+\href{https://ideosphere.ai/papers/quotient-realizable-v1.pdf}{Version-specific PDF}.
+\href{https://ideosphere.ai/papers/quotient-realizable}{Publication record}.
+\bibitem{DePoi}
+P. De Poi, E. Mezzetti, M. Micha\l ek, R. M. Mir\'o-Roig and E. Nevo,
+\emph{Circulant matrices and Galois--Togliatti systems},
+\href{https://arxiv.org/abs/1808.08387v1}{arXiv:1808.08387v1},
+25 August 2018, Remark 2.5, pp.~4--5.
+\bibitem{EGZ}
+P. Erd\H{o}s, A. Ginzburg and A. Ziv,
+\emph{Theorem in the additive number theory},
+Bulletin of the Research Council of Israel, Section F,
+\textbf{10F} (1961), 41--43.
+\href{https://users.renyi.hu/~p_erdos/1961-25.pdf}{Original paper}.
+\bibitem{AliabadiTwo}
+M. Aliabadi, \emph{Quotient-Realizable Multisets in Finite Groups:
+Two-Valued Criteria and Enumeration}, listed as \emph{Utilitas Mathematica}
+(2026) on the
+\href{https://mohsenmath88.wixsite.com/mohsenaliabadi/publications}{author's
+publications page}, item 31. Full text and individual publication date unavailable.
+\bibitem{DJW}
+D. Donovan, K. Johnson and I. M. Wanless,
+\emph{Permanents and determinants of Latin squares},
+Journal of Combinatorial Designs \textbf{24} (2016), 132--148;
+first published online 19 November 2014.
+\href{https://doi.org/10.1002/jcd.21418}{doi:10.1002/jcd.21418}.
+\href{https://users.monash.edu.au/~iwanless/abstracts/perdetLS.html}{Author-hosted abstract}.
+\end{thebibliography}
+\medskip\noindent\small
+Copyright \copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International (CC BY 4.0)}.
+\end{document}

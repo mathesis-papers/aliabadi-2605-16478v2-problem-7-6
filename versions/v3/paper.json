@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 86310,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "e4a2ed2062ed96d08c94b6b2f9f076a58da98962414367e2f510d6988f5d46f8",
+      "sha256": "e4a2ed2062ed96d08c94b6b2f9f076a58da98962414367e2f510d6988f5d46f8"
+    },
+    "source": {
+      "bytes": 18352,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "86377d9f95e48ca1784d1d1a972f28a4621952f172229199497f425bc471af2a",
+      "sha256": "86377d9f95e48ca1784d1d1a972f28a4621952f172229199497f425bc471af2a"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We extend Korea Superintelligence Labs' (2026) affirmative answer to Aliabadi's Problem 7.6 (A nonabelian twist on differences of bijections, arXiv:2605.16478v2, Section 7, page 17) by giving exact two-letter and abelian-subgroup criteria, the latter answering Problem 7.4. For a finite group G of order n and distinct u,v, a multiset with k copies of v and n-k copies of u is quotient-realizable exactly when d=ord(u^-1 v) divides k; the number of realizing permutations is binomial(n/d,k/d). We give product-one obstructions in every nonabelian dihedral group, every dicyclic group of order at least eight, and A4. Hall's theorem (1952) supplies abelian sufficiency, the two-diagonal permanent formula of De Poi et al. (2018) supplies the enumeration antecedent, and the Erdős–Ginzburg–Ziv theorem (1961) supplies the block decomposition.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "1154841a3345ca579e0d56fc4ceebee38814557c",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/1154841a3345ca579e0d56fc4ceebee38814557c/D5/S3/FiniteGroups/AliabadiQuotientObstruction.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 86310,
+      "sha256": "e4a2ed2062ed96d08c94b6b2f9f076a58da98962414367e2f510d6988f5d46f8",
+      "url": "/api/v1/collected-papers/aliabadi-2605-16478v2-problem-7-6/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-22T22:44:02.374149943Z",
+    "record": "aliabadi-2605-16478v2-problem-7-6",
+    "repository_name": "aliabadi-2605-16478v2-problem-7-6",
+    "source": {
+      "bytes": 18352,
+      "sha256": "86377d9f95e48ca1784d1d1a972f28a4621952f172229199497f425bc471af2a",
+      "url": "/api/v1/collected-papers/aliabadi-2605-16478v2-problem-7-6/files/source?version=3"
+    },
+    "title": "Aliabadi's Problems 7.4 and 7.6: Two-letter and subgroup extensions of Korea Superintelligence Labs (2026) (arXiv:2605.16478v2, Section 7, page 17)",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-22T22:44:02.374149943Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "aliabadi-2605-16478v2-problem-7-6"
+  }
+}
