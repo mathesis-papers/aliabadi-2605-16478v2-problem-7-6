@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24407815",
     "current_version": 3,
-    "doi": null,
+    "doi": "10.5281/zenodo.24407816",
     "lean_source": {
       "revision": "1154841a3345ca579e0d56fc4ceebee38814557c",
       "url": "https://github.com/the-omega-institute/trureturing/blob/1154841a3345ca579e0d56fc4ceebee38814557c/D5/S3/FiniteGroups/AliabadiQuotientObstruction.lean"

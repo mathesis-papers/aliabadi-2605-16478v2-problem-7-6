@@ -5,13 +5,15 @@
 We extend Korea Superintelligence Labs' (2026) affirmative answer to Aliabadi's Problem 7.6 (A nonabelian twist on differences of bijections, arXiv:2605.16478v2, Section 7, page 17) by giving exact two-letter and abelian-subgroup criteria, the latter answering Problem 7.4. For a finite group G of order n and distinct u,v, a multiset with k copies of v and n-k copies of u is quotient-realizable exactly when d=ord(u^-1 v) divides k; the number of realizing permutations is binomial(n/d,k/d). We give product-one obstructions in every nonabelian dihedral group, every dicyclic group of order at least eight, and A4. Hall's theorem (1952) supplies abelian sufficiency, the two-diagonal permanent formula of De Poi et al. (2018) supplies the enumeration antecedent, and the Erdős–Ginzburg–Ziv theorem (1961) supplies the block decomposition.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24407816](https://doi.org/10.5281/zenodo.24407816)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24407815](https://doi.org/10.5281/zenodo.24407815)
 - License: CC-BY-4.0
 - Version: 3
 - Mathesis record: [aliabadi-2605-16478v2-problem-7-6](https://mathesis-omega-research.apps.chrono-ai.fun/papers/aliabadi-2605-16478v2-problem-7-6?version=3)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Aliabadi's Problems 7.4 and 7.6: Two-letter and subgroup extensions of Korea Superintelligence Labs (2026) (arXiv:2605.16478v2, Section 7, page 17). Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/aliabadi-2605-16478v2-problem-7-6?version=3
+Haobo Ma, Wenlin Zhang (2026). Aliabadi's Problems 7.4 and 7.6: Two-letter and subgroup extensions of Korea Superintelligence Labs (2026) (arXiv:2605.16478v2, Section 7, page 17). Mathesis, version 3. https://doi.org/10.5281/zenodo.24407816
 
 ## Statement progress
 
