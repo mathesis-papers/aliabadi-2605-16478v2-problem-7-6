@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24407815",
     "current_version": 3,
     "doi": "10.5281/zenodo.24407816",
+    "kind": "note",
     "lean_source": {
       "revision": "1154841a3345ca579e0d56fc4ceebee38814557c",
       "url": "https://github.com/the-omega-institute/trureturing/blob/1154841a3345ca579e0d56fc4ceebee38814557c/D5/S3/FiniteGroups/AliabadiQuotientObstruction.lean"
@@ -55,10 +56,12 @@
     "title": "Aliabadi's Problems 7.4 and 7.6: Two-letter and subgroup extensions of Korea Superintelligence Labs (2026) (arXiv:2605.16478v2, Section 7, page 17)",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-22T22:44:02.374149943Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "aliabadi-2605-16478v2-problem-7-6"
